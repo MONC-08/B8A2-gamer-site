@@ -1,0 +1,251 @@
+/* responsive CSS for ipad screen*/
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .nav-container,
+    .instant-play-container {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        padding: 2.5rem;
+    }
+
+    /* banner responsive style  */
+
+    .banner-section {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .banner-content,
+    .banner-img {
+        width: calc(100% - 30px);
+    }
+
+    .banner-content {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    /* Online games related styles */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        width: 340px;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }
+
+    .online-game-title,
+    .funny-videos {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .online-games-description {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* instant play related styles*/
+    .instant-play-content,
+    .instant-img-container {
+        width: 90%;
+    }
+
+    .instant-play-content h2,
+    .instant-play-content p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .box-img1 img {
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .box-img2 img {
+        width: 15rem;
+        height: 19rem;
+        position: absolute;
+        top: 55%;
+        right: 60%;
+    }
+
+    /* responsive footer  */
+    .footer-container {
+        min-height: 380px;
+    }
+}
+
+/*....................................................................................................................................................................................................................................... */
+
+/*responsive CSS for mobile screen */
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    .nav-content ul,
+    .instant-play-container {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        padding: 2rem;
+    }
+
+    .nav-logo,
+    .nav-content,
+    .instant-play-content,
+    .instant-img-container {
+        width: 100%;
+    }
+
+    .nav-content ul li {
+        margin-top: 10px;
+    }
+
+    /* banner  */
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .banner-content,
+    .banner-img {
+        width: calc(100% - 20px);
+    }
+
+    .banner-content {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    /* Online games related styles */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .online-game-title,
+    .funny-videos {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .online-games-description {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    /* instant play related styles*/
+
+    .instant-play-content h2,
+    .instant-play-content p {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .box-img1 {
+        margin: 0;
+    }
+
+    .box-img1 img {
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .box-img2 img {
+        width: 9rem;
+        height: 10rem;
+        position: absolute;
+        top: 55%;
+        right: 58%;
+    }
+
+    /* features games */
+    .features-container {
+        min-height: 250px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+        padding: .8rem;
+    }
+
+    .feature-btn {
+        padding: 2px 5px;
+        display: flex;
+    }
+
+    .feature-btn img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .feature-text {
+        color: #0B0223;
+        font-size: .7rem;
+        font-weight: 500;
+    }
+
+    /* footer responsive style */
+
+    .footer-container {
+        min-height: 400px;
+    }
+
+    .about-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-content ul,
+    .sponsor-icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .sponsor-icon {
+        max-width: 130px;
+        margin: 0 auto;
+    }
+
+    .sponsor {
+        font-size: 1.2rem;
+    }
+
+    .settings {
+        max-width: 80%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .options,
+    .rights-reserved {
+        margin: 0;
+        font-size: .8rem;
+    }
+}
